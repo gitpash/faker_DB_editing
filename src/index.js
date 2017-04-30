@@ -5,7 +5,7 @@ const title = 'Minimal-Techno-Setup React__Webpack__Babel'
 
 ReactDOM.render(
   <div>{title}</div>,
-  document.getElementById('app'),
+  document.getElementById('app')
 )
 
 module.hot.accept()
