@@ -9,6 +9,7 @@
     "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
     "css-loader": "^0.28.0",
     "eslint": "^3.18.0",
     "eslint-config-kentcdodds": "^12.2.1",
@@ -26,9 +27,13 @@
     "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js"
+    "start": "webpack-dev-server --progress --colors --config ./webpack.config.js & yarn api",
+    "api": "json-server generator.js --watch db.json --port 3004"
   },
   "dependencies": {
+    "faker": "^4.1.0",
+    "json-server": "^0.10.1",
+    "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   }

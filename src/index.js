@@ -1,10 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-const title = 'Minimal-Techno-Setup React__Webpack__Babel'
+import App from './comnponents/App'
 
 ReactDOM.render(
-  <div>{title}</div>,
+  <App />,
   document.getElementById('app')
 )
 
